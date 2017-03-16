@@ -1,0 +1,6 @@
+0 3,15 * * * /usr/sbin/ntpdate uk.pool.ntp.org > /tmp/ntp.log
+0 0 * * *  /root/shaper/shaper reset > /tmp/shaper-reset.log
+0 8 * * *  /root/shaper/shaper resetstats > /tmp/shaper-resetstats.log
+*9/5 * * * * /root/shaper/shaper cron > /tmp/shaper-cron.log
+# 30 8-23/1 * * * /root/shaper/shaper banscan > /tmp/qban.log
+0 4 15 * * /sbin/reboot -i
